@@ -46,6 +46,8 @@ def join_columns():
 
     left_join["Hlavní_příčiny_nehody"] = array(convert_values)
 
+    #TODO: del useless attr, prepare for analysis
+
     # Index(['ID', 'Druh pozemní komunikace', 'Číslo pozemní komunikace',
     #        'Den, měsíc, rok', 'Den v týdnu', 'Čas ', 'Druh nehody',
     #        'Druh srážky jedoucích vozidel', 'Druh pevné překážky',
