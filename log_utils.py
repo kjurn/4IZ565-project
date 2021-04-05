@@ -12,3 +12,7 @@ def print_merge_error(file1, file2, exception):
 
 def print_merge_success(file1, file2):
     print("Merge of files", file1, "and", file2, "was successful.")
+
+
+def print_clean_success():
+    print("Files were successfully cleaned")
