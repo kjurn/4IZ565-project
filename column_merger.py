@@ -1,3 +1,5 @@
+import os
+
 from pandas import merge, ExcelFile, DataFrame
 from numpy import array
 
@@ -10,7 +12,7 @@ def join_columns():
     data = dataset_loader.load_data()
     # get columns data
     columns_filename = "columns.xlsx"
-    columns_path = "files/"
+    columns_path = os.path.join(dataset_loader.get_current_path(), "files/")
 
     try:
         columns_to_join = ExcelFile(columns_path + columns_filename)

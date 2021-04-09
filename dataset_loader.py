@@ -1,13 +1,16 @@
+import os.path
+
 from pandas import read_csv, read_excel
 
 from log_utils import print_load_error, print_load_success, print_merge_success, print_merge_error
 
 dataset_name = "HlmestoPraha2019.csv"
+current_path = os.path.dirname(__file__)
 
 
 def load_data():
     # Load header from Excel file
-    files_path = "files/"
+    files_path = os.path.join(current_path, "files/")
     header = "header.xlsx"
     excel_sheet_name = "Hárok1"
     try:
@@ -41,3 +44,7 @@ def load_data():
 
 def get_dataset_name():
     return dataset_name
+
+
+def get_current_path():
+    return current_path
