@@ -14,5 +14,9 @@ def print_merge_success(file1, file2):
     print("Merge of files", file1, "and", file2, "was successful.")
 
 
+def print_column_delete_success():
+    print("Columns were successfully removed")
+
+
 def print_clean_success():
-    print("Files were successfully cleaned")
+    print("Data were successfully cleaned")
