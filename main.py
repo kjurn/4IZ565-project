@@ -17,4 +17,4 @@ print("------------  Showing a head of a data  --------------")
 print("------------------------------------------------------")
 print(cleaned_data.head())
 # create a model of a decision tree
-tree_prediction = decisiontree.create_tree(dataset_splitter.split(cleaned_data, "UPPER"))
+decisiontree.create_tree(dataset_splitter.split(cleaned_data, "UPPER"))
